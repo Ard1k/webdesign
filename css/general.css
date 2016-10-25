@@ -1,100 +1,77 @@
 ﻿/*top right bottom left*/
 @media (min-width:600px) {
-    .coolheader {
-        position: fixed;
-        height: 4em;
-    }
+	.coolheader {
+		position: fixed;
+	}
 
-    nav {
-        background-color: aquamarine;
-        position: fixed;
-        min-height: 2em;
-    }
+	nav {
+		position: fixed;
+	}
 
-    .coolmenu {
-        height: 2em;
-        margin-top: 4em;
-        background-color: aquamarine;
-    }
+	.coolmenu {
+		margin-top: 8em;
+	}
 
-    ul.coolmenu {
-        position: fixed;
-    }
+	ul.coolmenu {
+		position: fixed;
+	}
 
-    .content_wrapper {
-        padding-top: 6em;
-    }
-}
-
-@media (max-width: 599px) {
-    .coolheader {
-        position: relative;
-        overflow: hidden;
-    }
-
-    nav {
-        background-color: aquamarine;
-        min-height: 2em;
-    }
-
-    .coolmenu {
-        height: 2em;
-        position: relative;
-        width: 100%;
-    }
-
-    .content_wrapper {
-        position: relative;
-    }
+	.content_wrapper {
+		padding-top: 10em;
+	}
 }
 
 li.coolmenuitem:hover {
-    background-color: darkorange;
+	background-color: darkorange;
 }
 
 li.coolmenuitem {
-    display: inline-table;
-    padding-left: 1em;
-    padding-right: 1em;
-    padding-top: 0.3em;
-    height: 2em;
+	display: inline-table;
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.3em;
+	height: 2em;
 }
 
 .coolheader {
-    background-color: Highlight;
-    margin-top: 0px;
-    width: 100%;
-    height: 4em;
+	background-image: url(../img/gtav_header1.jpg);
+	background-size: contain;
+	background-repeat:no-repeat;
+	background-color:#e9f0e9;
+	margin-top: 0px;
+	width: 100%;
+	height: 8em;
 }
 
 ul.coolmenu {
-    display: inline;
-    padding-left: 0px;
+	display: inline;
+	padding-left: 0px;
 }
 
 nav {
-    background-color: aquamarine;
-    min-height: 2em;
+	min-height: 2em;
 }
 
 .coolmenu {
-    height: 2em;
-    position: relative;
-    width: 100%;
+	height: 2em;
+	background-color: Highlight;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
 }
 
 /*main*/
 
 main {
-    width:90%;
-    padding-left:10%;
+	width: 90%;
+	padding-left: 10%;
 }
 
 .span3 {
-    display:inline-block;
+	display: inline-block;
 }
 
 article {
-    width:30%;
-    float:left;
+	width: 30%;
+	float: left;
 }
