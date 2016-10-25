@@ -1,0 +1,100 @@
+﻿/*top right bottom left*/
+@media (min-width:600px) {
+    .coolheader {
+        position: fixed;
+        height: 4em;
+    }
+
+    nav {
+        background-color: aquamarine;
+        position: fixed;
+        min-height: 2em;
+    }
+
+    .coolmenu {
+        height: 2em;
+        margin-top: 4em;
+        background-color: aquamarine;
+    }
+
+    ul.coolmenu {
+        position: fixed;
+    }
+
+    .content_wrapper {
+        padding-top: 6em;
+    }
+}
+
+@media (max-width: 599px) {
+    .coolheader {
+        position: relative;
+        overflow: hidden;
+    }
+
+    nav {
+        background-color: aquamarine;
+        min-height: 2em;
+    }
+
+    .coolmenu {
+        height: 2em;
+        position: relative;
+        width: 100%;
+    }
+
+    .content_wrapper {
+        position: relative;
+    }
+}
+
+li.coolmenuitem:hover {
+    background-color: darkorange;
+}
+
+li.coolmenuitem {
+    display: inline-table;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.3em;
+    height: 2em;
+}
+
+.coolheader {
+    background-color: Highlight;
+    margin-top: 0px;
+    width: 100%;
+    height: 4em;
+}
+
+ul.coolmenu {
+    display: inline;
+    padding-left: 0px;
+}
+
+nav {
+    background-color: aquamarine;
+    min-height: 2em;
+}
+
+.coolmenu {
+    height: 2em;
+    position: relative;
+    width: 100%;
+}
+
+/*main*/
+
+main {
+    width:90%;
+    padding-left:10%;
+}
+
+.span3 {
+    display:inline-block;
+}
+
+article {
+    width:30%;
+    float:left;
+}
