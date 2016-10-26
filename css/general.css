@@ -1,77 +1,75 @@
 ﻿/*top right bottom left*/
-@media (min-width:600px) {
+@font-face {
+	font-family: pricedown;
+	src: url(../fonts/pricedown.ttf);
+}
+
+@media (max-width:599px) {
 	.coolheader {
-		position: fixed;
-	}
-
-	nav {
-		position: fixed;
-	}
-
-	.coolmenu {
-		margin-top: 8em;
-	}
-
-	ul.coolmenu {
-		position: fixed;
+		position: relative !important;
 	}
 
 	.content_wrapper {
-		padding-top: 10em;
+		padding-top: 0px !important;
+	}
+
+	.menu {
+		width: unset !important;
+		margin: inherit !important;
 	}
 }
 
-li.coolmenuitem:hover {
-	background-color: darkorange;
-}
-
-li.coolmenuitem {
-	display: inline-table;
-	padding-left: 1em;
-	padding-right: 1em;
-	padding-top: 0.3em;
-	height: 2em;
-}
-
 .coolheader {
-	background-image: url(../img/gtav_header1.jpg);
-	background-size: contain;
-	background-repeat:no-repeat;
-	background-color:#e9f0e9;
+	background-color: #e9f0e9;
 	margin-top: 0px;
 	width: 100%;
-	height: 8em;
+	position: fixed;
 }
 
-ul.coolmenu {
-	display: inline;
-	padding-left: 0px;
+#headercontent {
+	height: 170px;
+	background-image: url(../img/static/header.png);
+	background-size: auto 170px;
+	background-repeat: no-repeat;
+		overflow: hidden;
 }
+
+	#headercontent > h1 {
+		font-family: pricedown;
+		font-size: 60px;
+		margin-top:30px;
+		margin-left: 400px;
+		position:relative;
+	}
+
+	#headercontent > p {
+		font-family: pricedown;
+		font-size: 40px;
+		margin-left: 450px;
+	}
 
 nav {
-	min-height: 2em;
+	background-color: Highlight;
 }
 
-.coolmenu {
-	height: 2em;
-	background-color: Highlight;
-	position: relative;
-	width: 100%;
-	overflow: hidden;
+.menu {
+	width: 500px;
+	margin: 0 auto;
 }
+
+	.menu > li {
+		display: inline-block;
+		padding: 5px 0px;
+		width: 100px;
+		text-align: center;
+	}
+
+		.menu > li:hover {
+			background-color: darkorange;
+		}
 
 /*main*/
 
-main {
-	width: 90%;
-	padding-left: 10%;
-}
-
-.span3 {
-	display: inline-block;
-}
-
-article {
-	width: 30%;
-	float: left;
+.content_wrapper {
+	padding-top: 200px;
 }
