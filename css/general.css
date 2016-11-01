@@ -1,75 +1,143 @@
 ﻿/*top right bottom left*/
 @font-face {
-	font-family: pricedown;
-	src: url(../fonts/pricedown.ttf);
+    font-family: pricedown;
+    src: url(../fonts/pricedown.ttf);
 }
 
+@font-face {
+    font-family: lol1;
+    src: url(../fonts/lol1.otf);
+}
+
+/*global*/
+body {
+    background-color: #808080;
+    height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+    a:link {
+        color: inherit;
+    }
+
+    a:hover {
+        color: inherit;
+        text-decoration: none;
+    }
+/*global - end*/
+
 @media (max-width:599px) {
-	.coolheader {
-		position: relative !important;
-	}
+    .coolheader {
+        position: relative !important;
+    }
 
-	.content_wrapper {
-		padding-top: 0px !important;
-	}
+    #headercontent {
+        background-image: url(../img/krocani_narrow.png) !important;
+    }
 
-	.menu {
-		width: unset !important;
-		margin: inherit !important;
-	}
+    .content_wrapper {
+        padding-top: 0px !important;
+    }
+
+    .menu {
+        width: unset !important;
+        margin: inherit !important;
+    }
+
+    footer {
+        position: relative !important;
+        height: auto !important;
+    }
 }
 
 .coolheader {
-	background-color: #e9f0e9;
-	margin-top: 0px;
-	width: 100%;
-	position: fixed;
+    background-image: url(../img/static/header_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #020307;
+    margin-top: 0px;
+    width: 100%;
+    position: fixed;
 }
 
 #headercontent {
-	height: 170px;
-	background-image: url(../img/static/header.png);
-	background-size: auto 170px;
-	background-repeat: no-repeat;
-		overflow: hidden;
-}
-
-	#headercontent > h1 {
-		font-family: pricedown;
-		font-size: 60px;
-		margin-top:30px;
-		margin-left: 400px;
-		position:relative;
-	}
-
-	#headercontent > p {
-		font-family: pricedown;
-		font-size: 40px;
-		margin-left: 450px;
-	}
-
-nav {
-	background-color: Highlight;
+    height: 100px;
+    background-image: url(../img/static/lol_logo.png),url(../img/krocani.png);
+    background-size: auto 82px;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .menu {
-	width: 500px;
-	margin: 0 auto;
+    width: 700px;
+    margin: 0 auto;
 }
 
-	.menu > li {
-		display: inline-block;
-		padding: 5px 0px;
-		width: 100px;
-		text-align: center;
-	}
+    .menu > li {
+        display: inline-block;
+        padding: 5px 0px;
+        width: 105px;
+        text-align: center;
+        font-family: lol1;
+        font-weight: bold;
+        font-size: 23px;
+        color: #f0d577;
+        margin: 0px;
+    }
 
-		.menu > li:hover {
-			background-color: darkorange;
-		}
+        .menu > li:hover {
+            /*border-radius: 15px 5px 15px 5px;*/
+            text-shadow: 2px 2px 2px #52340C;
+            background-image: url(../img/static/button.png);
+            background-size: cover;
+        }
+
+#dummy {
+    background-image: none !important;
+}
 
 /*main*/
 
 .content_wrapper {
-	padding-top: 200px;
+    padding-top: 122px;
+    margin-bottom: 20px;
+}
+
+.main_content {
+    background-color: #FFFFFF;
+    background-image: url(../img/static/context.jpg);
+    background-size: contain;
+    max-width: 800px;
+    position: center;
+    margin: 0 auto;
+    padding: 30px;
+    margin-bottom: 0px;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 20px;
+    width: 100%;
+    background-color: #000000;
+    clear: both;
+}
+
+    footer > a {
+        margin-left: 50px;
+        color: #a8d9fe;
+    }
+
+        footer > a:hover {
+            color: #e6e6e6;
+        }
+
+#copyright {
+    margin-left: 20px;
+    color: white;
 }
